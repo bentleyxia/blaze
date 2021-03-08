@@ -1,0 +1,12 @@
+prefix=/opt/ompi
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: hwloc
+Description: Hardware locality detection and management library
+Version: 2.4.0
+Requires.private: 
+Cflags: -I${includedir}
+Libs: -L${libdir} -lhwloc
+Libs.private: -lm     -lpthread
